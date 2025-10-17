@@ -20,7 +20,10 @@ def lee_entrenos(ruta_csv):
             calorias = int(calorias)
             distancia = float(distancia)
             frecuencia = int(frecuencia)
-            compartido = bool(compartido)
+            if compartido == "s":
+                True
+            else:
+                False
             entrenos = entreno(tipo, fechahora, ubicacion, duracion, calorias, distancia, frecuencia, compartido)
             lista_entrenos.append(entrenos)
     
